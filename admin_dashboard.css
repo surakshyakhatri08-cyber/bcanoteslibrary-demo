@@ -1,0 +1,136 @@
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0b2cff, #4facfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    background: white;
+    width: 1500px;
+    height: 700px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* ===== TITLE ===== */
+.container h1{
+    text-align: center;
+    color: #0b2cff;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* ===== NAV BAR ===== */
+.menu{
+    display: flex;
+    align-items: center;
+    background: #b2c3fa;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* ===== LEFT MENU LINKS ===== */
+.menu-left{
+    display: flex;
+    gap: 20px;
+}
+
+/* ===== LINKS ===== */
+.menu a{
+    text-decoration: none;
+    color: #0b2cff;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background: #0b2cff;
+    color: white;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown{
+    margin-left: auto; /* PUSH TO RIGHT */
+    position: relative;
+}
+
+.dropbtn{
+    background: #0b2cff;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropbtn:hover{
+    background: #081fa8;
+}
+
+/* ===== DROPDOWN CONTENT ===== */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* ===== DROPDOWN LINKS ===== */
+.dropdown-content a{
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.dropdown-content a:hover{
+    background: #0b2cff;
+    color: white;
+}
+
+/* ===== SHOW DROPDOWN ON HOVER ===== */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* ===== CONTENT ===== */
+.content{
+    color: rgb(2, 2, 102);
+}
+
+.content h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.content h3{
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #555;
+}

@@ -1,0 +1,95 @@
+
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== FULL SCREEN BACKGROUND ===== */
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #056ff1;   /* Light blue full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container{
+    background: #ffffff;      /* White box */
+    width: 420px;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* ===== LOG IN TITLE ===== */
+.container h1{
+    color: #0b2cff;         /* Dark blue */
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* ===== INPUT FIELDS ===== */
+.container input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;     /* Space between inputs */
+    border-radius: 6px;
+    border: 1px solid #b5c9ff;
+    outline: none;
+    font-size: 14px;
+    color: #717172;
+
+  cursor: pointer;
+  outline: none;
+}
+
+/* ===== INPUT FOCUS EFFECT ===== */
+.container input:focus{
+    border-color: #0b2cff;
+    box-shadow: 0px 0px 5px rgba(11,44,255,0.5);
+}
+
+/* ===== LOGIN BUTTON ===== */
+.login-button button{
+     width: 100%;
+    padding: 12px;
+    background: #0b2cff;  /* dark blue */
+    color:#b6d3fa;         
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+/* ===== SIGN UP BUTTON ===== */
+.signup-text button{
+        width: 100%;
+    padding: 12px;
+    background: #7fb7ff;  /* light blue */
+    color: blue; 
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.login-button button:hover{
+    background: #001bb5;
+}
+
+.signup-text button:hover{
+    background: #5fa3ff;
+}

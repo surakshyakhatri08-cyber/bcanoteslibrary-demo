@@ -1,0 +1,150 @@
+
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== FULL SCREEN BACKGROUND ===== */
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #056ff1;   /* Light blue full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container{
+    background: #ffffff;      /* White box */
+    width: 420px;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* ===== SIGN UP TITLE ===== */
+.container h1{
+    color: #0b2cff;         /* Dark blue */
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* ===== INPUT FIELDS & SELECT DROPDOWN STYLE===== */
+.container input,
+.container select{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;     /* Space between inputs */
+    border-radius: 6px;
+    border: 1px solid #b5c9ff;
+    outline: none;
+    font-size: 14px;
+    color: #717172;
+    appearance: none;            /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+  outline: none;
+}
+
+/* ===== INPUT FOCUS EFFECT ===== */
+.container input:focus,
+.container select:focus{
+    border-color: #0b2cff;
+    box-shadow: 0px 0px 5px rgba(11,44,255,0.5);
+}
+
+/* ===== PLACEHOLDER (FIRST OPTION) COLOR ===== */
+.container select option[value=""] {
+  color: rgb(175, 175, 249);
+}
+
+/* Hover effect */
+.container select:hover {
+    border-color: #4d6cff;
+}
+
+/* Selected value background */
+.container select:valid {
+    background-color: #f8fbff;
+}
+
+/* ===== SIGN UP BUTTON ===== */
+.container button{
+    width: 100%;
+    padding: 12px;
+    background: #0b2cff;     /* Dark blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.container button:hover{
+    background: #001bb5;
+}
+
+/* ===== LOGIN TEXT ===== */
+.login-text{
+    margin-top: 18px;
+    color: #0b2cff;
+    font-size: 14px;
+}
+
+.login-text a{
+    color: #0b2cff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+  .login-text a:hover {
+    text-decoration: underline;
+  }
+
+/* ===== HR (OR) Line ===== */
+
+  .hr-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .hr-container hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #000;
+  }
+
+  .hr-container span {
+    padding: 0 10px;
+    font-weight: bold;
+  }
+
+/* ===== GOOGLE BUTTON ===== */
+.google-btn{
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.google-btn:hover{
+    background: #f5f5f5;
+}
